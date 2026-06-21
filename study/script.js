@@ -32,23 +32,39 @@ moodBtn.addEventListener("click", function () {
 
 // add song's - list (song title) - exception (title = "")
 
-const songInput = getElementById("song-input");
-const addBtn = getElementById("add-btn");
-const songList = getElementById("song-list");
+const songInput = document.getElementById("song-input");
+const addBtn = document.getElementById("add-btn");
+const songList = document.getElementById("song-list");
+
+let songs = []
 
 addBtn.addEventListener("click", function () {
     const title = songInput.value; 
-    console.log("hi");
     if (title == "")
     {
         alert("Write a song title!");
         return;
     }
 
-    const li = document.createElement("li");
-    li.textContent = title;
-    songList.appendChild(li);
+    songs.push(title);
 
     console.log("added: " + title);
     songInput.value = "";
 })
+
+// addBtn.addEventListener("click", function () {
+//     const title = songInput.value; 
+//     console.log("hi");
+//     if (title == "")
+//     {
+//         alert("Write a song title!");
+//         return;
+//     }
+
+//     const li = document.createElement("li");
+//     li.textContent = title;
+//     songList.appendChild(li);
+
+//     console.log("added: " + title);
+//     songInput.value = "";
+// })
