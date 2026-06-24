@@ -1,0 +1,84 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #eef1f6;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1f2430;
+}
+
+.info-box {
+  background: #fff;
+  width: 320px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.log-in-text h1 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.info-box h2 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 14px 0 6px;
+}
+
+.info-box input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.info-box input:focus {
+  outline: 2px solid #3b82f6;
+  border-color: transparent;
+}
+
+.log-in-btn {
+  margin-top: 22px;
+}
+
+.log-in-btn button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 9px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.log-in-btn button:hover {
+  background: #2f6fd6;
+}
+
+.sign-up-btn button {
+  padding: 10px 22px;
+  border: 1px solid #3b82f6;
+  border-radius: 9px;
+  background: transparent;
+  color: #3b82f6;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sign-up-btn button:hover {
+  background: #3b82f6;
+  color: #fff;
+}
